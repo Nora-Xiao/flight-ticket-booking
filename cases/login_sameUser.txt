@@ -1,0 +1,30 @@
+# user 1's commands
+create user1 user1 100
+login user1 user1
+quit
+*
+# expected printouts for user 1 (this is T1)
+Created user user1
+Logged in as user1
+Goodbye
+|
+# this is T2
+Failed to create user
+Logged in as user1
+Goodbye
+*  
+# user 1's commands on another instance 
+create user1 user1 100
+login user1 user1
+quit
+*  
+# user 1's expected printouts on another instance (this is T2)
+Failed to create user
+Logged in as user1
+Goodbye
+|
+# this is T1
+Created user user1
+Logged in as user1
+Goodbye
+*

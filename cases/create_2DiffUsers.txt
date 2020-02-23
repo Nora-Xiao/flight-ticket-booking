@@ -1,0 +1,20 @@
+# Terminal 1
+create user1 user1 100
+login user1 user1
+quit
+*
+# expected result for Terminal 1
+Created user user1
+Logged in as user1
+Goodbye
+*
+# Terminal 2
+create user2 user2 100
+login user2 user2
+quit
+*
+# expected result for Terminal 2
+Created user user2
+Logged in as user2
+Goodbye
+*
